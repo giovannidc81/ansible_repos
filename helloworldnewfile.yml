@@ -4,3 +4,5 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+    - name: Ansible timestamp filename example
+      command: touch example{{ansible_date_time.date}}.log
